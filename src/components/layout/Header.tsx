@@ -7,7 +7,7 @@ import { ShoppingCart, UtensilsCrossed } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="w-full bg-white shadow-md py-4">
+    <header className="w-full bg-white shadow-md py-4 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center">
           <span className="text-2xl font-bold text-cocinaRed font-spice">Cocina <span className="text-cocinaGreen">India</span></span>
