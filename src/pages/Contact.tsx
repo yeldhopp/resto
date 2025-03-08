@@ -72,12 +72,12 @@ const Contact = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Call Us</h3>
                 <p className="text-muted-foreground mb-2">Customer Support:</p>
-                <a href="tel:+19194567890" className="text-cocinaOrange hover:underline">
-                  (919) 456-7890
+                <a href="tel:+18887778639" className="text-cocinaOrange hover:underline">
+                  (888) 777-8639
                 </a>
                 <p className="text-muted-foreground mt-2 mb-2">Hours of Operation:</p>
-                <p>Monday-Friday: 9am-6pm EST</p>
-                <p>Saturday: 10am-4pm EST</p>
+                <p>Online Support: 24/7</p>
+                <p>Office Hours: Monday-Friday, 10am-5pm EST</p>
               </CardContent>
             </Card>
             
@@ -89,9 +89,8 @@ const Contact = () => {
                 <h3 className="text-xl font-bold mb-2">Visit Us</h3>
                 <p className="text-muted-foreground mb-2">Corporate Office:</p>
                 <address className="not-italic">
-                  123 Main Street<br />
-                  Suite 456<br />
-                  Raleigh, NC 27601
+                  226 Woodrow St<br />
+                  Reidsville, NC 27320
                 </address>
                 <p className="text-muted-foreground mt-2">
                   By appointment only
