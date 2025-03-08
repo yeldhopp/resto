@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { getNearestCity } from "@/utils/geolocation";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,6 +16,24 @@ const Contact = () => {
     subject: "",
     message: ""
   });
+  
+  const [nearestLocation, setNearestLocation] = useState("North Carolina");
+  const [locationLoading, setLocationLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchLocation = async () => {
+      try {
+        const nearestCity = await getNearestCity();
+        setNearestLocation(`${nearestCity.name}, ${nearestCity.state}`);
+      } catch (error) {
+        console.error("Error fetching location:", error);
+      } finally {
+        setLocationLoading(false);
+      }
+    };
+
+    fetchLocation();
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -102,6 +121,13 @@ const Contact = () => {
           <Card className="mb-12">
             <CardContent className="p-8">
               <h2 className="text-2xl font-bold mb-6 text-center">Send Us a Message</h2>
+              <p className="text-center text-muted-foreground mb-6">
+                {locationLoading ? (
+                  "Finding your nearest location..."
+                ) : (
+                  <>We're delighted to assist you from <span className="font-medium text-cocinaRed">{nearestLocation}</span></>
+                )}
+              </p>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
