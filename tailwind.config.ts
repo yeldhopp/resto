@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,12 +62,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors for Cocina India
+				cocinaRed: '#D92626',
+				cocinaOrange: '#EF8A37',
+				cocinaYellow: '#FFD56D',
+				cocinaDarkBrown: '#42362B',
+				cocinaGreen: '#568203',
+				cocinaLightBrown: '#D9B99B'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'spice-pattern': "url('/spice-pattern.png')",
+				'hero-gradient': 'linear-gradient(90deg, rgba(217, 38, 38, 0.85) 0%, rgba(239, 138, 55, 0.85) 100%)',
 			},
 			keyframes: {
 				'accordion-down': {
@@ -84,11 +96,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out'
+			},
+			fontFamily: {
+				'spice': ['Playfair Display', 'serif'],
+				'base': ['Poppins', 'sans-serif']
 			}
 		}
 	},
