@@ -1,8 +1,28 @@
 
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { UtensilsCrossed, ShoppingCart } from "lucide-react";
+import { getNearestCity } from "@/utils/geolocation";
 
 const HeroSection = () => {
+  const [nearestCity, setNearestCity] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchLocation = async () => {
+      try {
+        const city = await getNearestCity();
+        setNearestCity(`${city.name}`);
+      } catch (error) {
+        console.error("Error fetching location:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchLocation();
+  }, []);
+
   return (
     <section className="relative h-[70vh] flex items-center">
       <div 
@@ -19,7 +39,11 @@ const HeroSection = () => {
       
       <div className="container mx-auto relative z-20 px-4">
         <div className="max-w-3xl text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in text-shadow">Discover Authentic Indian Cuisine</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in text-shadow">
+            {!isLoading && nearestCity ? 
+              `Discover Authentic Indian Cuisine near ${nearestCity}` : 
+              "Discover Authentic Indian Cuisine"}
+          </h1>
           <p className="text-xl md:text-2xl mb-8 animate-fade-in opacity-90">
             Your gateway to the vibrant flavors and rich traditions of India - from restaurant-quality meals to authentic grocery ingredients.
           </p>

@@ -1,7 +1,9 @@
 
+import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { getNearestCity } from "@/utils/geolocation";
 
 const promotions = [
   {
@@ -37,10 +39,32 @@ const promotions = [
 ];
 
 const PromotionsSection = () => {
+  const [nearestCity, setNearestCity] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchLocation = async () => {
+      try {
+        const city = await getNearestCity();
+        setNearestCity(`${city.name}`);
+      } catch (error) {
+        console.error("Error fetching location:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchLocation();
+  }, []);
+
   return (
     <section className="py-16 spice-pattern-overlay">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-2 text-center">Special Offers</h2>
+        <h2 className="text-3xl font-bold mb-2 text-center">
+          {!isLoading && nearestCity ? 
+            `Special Offers Near ${nearestCity}` : 
+            "Special Offers"}
+        </h2>
         <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
           Take advantage of our latest promotions and discover new flavors from across India
         </p>
