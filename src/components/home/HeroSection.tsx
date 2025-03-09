@@ -72,7 +72,7 @@ const HeroSection = () => {
               <TabsTrigger 
                 key={slide.id} 
                 value={slide.id}
-                className="data-[state=active]:bg-white data-[state=active]:text-cocinaRed"
+                className="data-[state=active]:bg-white data-[state=active]:text-cocinaGreen"
               />
             ))}
           </TabsList>
@@ -90,12 +90,13 @@ const HeroSection = () => {
                 style={{
                   backgroundImage: `url('${slide.image}')`,
                   backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  filter: "brightness(0.5)",
+                  backgroundPosition: "center 30%",
+                  filter: "brightness(0.7)",
                 }}
               />
               
-              <div className="absolute inset-0 bg-gradient-to-r from-cocinaRed/70 to-cocinaOrange/70 z-10" />
+              {/* Changed overlay from red to green-yellow gradient */}
+              <div className="absolute inset-0 bg-gradient-to-r from-cocinaGreen/60 to-cocinaYellow/60 z-10" />
               
               <div className="container mx-auto relative z-20 h-full flex items-center px-4">
                 <div className="max-w-3xl text-white">
@@ -107,7 +108,7 @@ const HeroSection = () => {
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
-                    <Button size="lg" className="bg-white text-cocinaRed hover:bg-white/90 text-lg px-8 py-6">
+                    <Button size="lg" className="bg-white text-cocinaGreen hover:bg-white/90 text-lg px-8 py-6">
                       <UtensilsCrossed className="mr-2 h-5 w-5" />
                       <a href="https://restaurants.cocinaindia.com" className="font-medium">
                         Order Food
