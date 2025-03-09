@@ -23,11 +23,28 @@ const Header = () => {
   return (
     <header className="w-full bg-white shadow-md py-4 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
+        {/* Logo (Left) */}
         <Link to="/" className="flex items-center">
           <span className="text-2xl font-bold text-cocinaRed font-spice">Cocina <span className="text-cocinaGreen">India</span></span>
         </Link>
         
-        {/* Desktop Navigation */}
+        {/* Buttons (Center) - visible on desktop */}
+        <div className="hidden md:flex gap-4 mx-auto">
+          <Button variant="outline" className="bg-cocinaRed text-white hover:bg-cocinaRed/90 hover:text-white">
+            <UtensilsCrossed className="mr-2 h-4 w-4" />
+            <a href="https://restaurants.cocinaindia.com" target="_blank" rel="noopener noreferrer">
+              Restaurants
+            </a>
+          </Button>
+          <Button variant="outline" className="bg-cocinaOrange text-white hover:bg-cocinaOrange/90 hover:text-white">
+            <ShoppingCart className="mr-2 h-4 w-4" />
+            <a href="https://groceries.cocinaindia.com" target="_blank" rel="noopener noreferrer">
+              Spices of India
+            </a>
+          </Button>
+        </div>
+        
+        {/* Desktop Navigation (Right) */}
         <div className="hidden md:block">
           <NavigationMenu>
             <NavigationMenuList>
@@ -101,22 +118,6 @@ const Header = () => {
           </NavigationMenu>
         </div>
         
-        {/* Desktop Buttons */}
-        <div className="hidden md:flex gap-4">
-          <Button variant="outline" className="bg-cocinaRed text-white hover:bg-cocinaRed/90 hover:text-white">
-            <UtensilsCrossed className="mr-2 h-4 w-4" />
-            <a href="https://restaurants.cocinaindia.com" target="_blank" rel="noopener noreferrer">
-              Restaurants
-            </a>
-          </Button>
-          <Button variant="outline" className="bg-cocinaOrange text-white hover:bg-cocinaOrange/90 hover:text-white">
-            <ShoppingCart className="mr-2 h-4 w-4" />
-            <a href="https://groceries.cocinaindia.com" target="_blank" rel="noopener noreferrer">
-              Groceries
-            </a>
-          </Button>
-        </div>
-        
         {/* Mobile Menu Trigger */}
         <div className="md:hidden flex items-center">
           <Sheet>
@@ -163,7 +164,7 @@ const Header = () => {
                     <Button className="bg-cocinaOrange text-white hover:bg-cocinaOrange/90 hover:text-white w-full justify-center">
                       <ShoppingCart className="mr-2 h-5 w-5" />
                       <a href="https://groceries.cocinaindia.com" target="_blank" rel="noopener noreferrer" className="w-full">
-                        Groceries
+                        Spices of India
                       </a>
                     </Button>
                   </div>
