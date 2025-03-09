@@ -32,13 +32,13 @@ const Header = () => {
         <div className="hidden md:flex gap-4 mx-auto">
           <Button variant="outline" className="bg-cocinaRed text-white hover:bg-cocinaRed/90 hover:text-white">
             <UtensilsCrossed className="mr-2 h-4 w-4" />
-            <a href="https://restaurants.cocinaindia.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://restaurant.cocinaindia.com" target="_blank" rel="noopener noreferrer">
               Restaurants
             </a>
           </Button>
           <Button variant="outline" className="bg-cocinaOrange text-white hover:bg-cocinaOrange/90 hover:text-white">
             <ShoppingCart className="mr-2 h-4 w-4" />
-            <a href="https://groceries.cocinaindia.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://restaurant.cocinaindia.com" target="_blank" rel="noopener noreferrer">
               Spices of India
             </a>
           </Button>
