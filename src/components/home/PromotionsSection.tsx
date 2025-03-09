@@ -11,7 +11,7 @@ const promotions = [
     title: "Weekend Special",
     description: "Get 20% off on all restaurant orders above $30 this weekend!",
     badge: "Limited Time",
-    image: "https://images.unsplash.com/photo-1585937421612-70a008356cf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2336&q=80",
+    image: "/lovable-uploads/d2c2529c-a7fe-4e6d-8688-b1ac839334e9.png",
     link: "https://restaurants.cocinaindia.com",
     buttonText: "Order Now",
     color: "bg-cocinaRed"
@@ -21,7 +21,7 @@ const promotions = [
     title: "Spice Box",
     description: "Subscribe to our monthly spice box and discover authentic Indian flavors!",
     badge: "Bestseller",
-    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+    image: "/lovable-uploads/4984a8eb-9e67-4d97-8215-82f818e036a6.png",
     link: "https://groceries.cocinaindia.com",
     buttonText: "Subscribe",
     color: "bg-cocinaOrange"
@@ -31,7 +31,7 @@ const promotions = [
     title: "Free Delivery",
     description: "Free grocery delivery on your first order with code WELCOME",
     badge: "New Customers",
-    image: "https://images.unsplash.com/photo-1588449668365-d15e397f6787?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+    image: "/lovable-uploads/76a61805-3fb6-4aa7-8b4b-fabfabe7a622.png",
     link: "https://groceries.cocinaindia.com",
     buttonText: "Shop Now",
     color: "bg-cocinaGreen"

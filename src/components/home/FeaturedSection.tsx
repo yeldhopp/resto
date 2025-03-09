@@ -11,7 +11,7 @@ const restaurants = [
     name: "Spice Garden",
     cuisine: "North Indian",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+    image: "/lovable-uploads/69dc4110-e9ff-4f46-bf00-f44a8da9dd3a.png",
     location: "Chapel Hill",
     popular: "Butter Chicken"
   },
@@ -20,7 +20,7 @@ const restaurants = [
     name: "South Thali",
     cuisine: "South Indian",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2274&q=80",
+    image: "/lovable-uploads/4162f18d-6ea2-4687-abf2-4a99f248d0f4.png",
     location: "Raleigh",
     popular: "Masala Dosa"
   },
@@ -29,7 +29,7 @@ const restaurants = [
     name: "Bombay Street Food",
     cuisine: "Street Food",
     rating: 4.6,
-    image: "https://images.unsplash.com/photo-1625398407796-82280d47c547?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+    image: "/lovable-uploads/cbe59b8d-52d8-4749-99f3-15b12bb0b967.png",
     location: "Durham",
     popular: "Pav Bhaji"
   }
@@ -41,7 +41,7 @@ const groceries = [
     name: "Organic Basmati Rice",
     category: "Grains",
     rating: 4.9,
-    image: "https://images.unsplash.com/photo-1586201375761-83865001e8c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+    image: "/lovable-uploads/8292a8fd-3ad6-4823-be1e-21f89392a3b8.png",
     weight: "10 lb",
     price: "$18.99"
   },
@@ -50,16 +50,16 @@ const groceries = [
     name: "Masala Spice Set",
     category: "Spices",
     rating: 4.8,
-    image: "https://images.unsplash.com/photo-1532336414046-cf8e0468821d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+    image: "/lovable-uploads/52a20f0a-5d94-40b7-91ea-5ab85d76a8df.png",
     weight: "12 oz",
     price: "$29.99"
   },
   {
     id: 3,
-    name: "Ghee",
+    name: "Homemade Ghee",
     category: "Dairy",
     rating: 4.7,
-    image: "https://images.unsplash.com/photo-1629118159215-45bbb17a7a86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+    image: "/lovable-uploads/a75ff3a4-0237-4398-a5bc-8df6713e0c1a.png",
     weight: "16 oz",
     price: "$12.99"
   }

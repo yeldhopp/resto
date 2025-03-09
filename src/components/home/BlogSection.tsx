@@ -8,21 +8,21 @@ const blogPosts = [
     id: 1,
     title: "The Art of Indian Spices",
     excerpt: "Discover the essential spices that form the foundation of Indian cuisine and how to use them in your cooking.",
-    image: "https://images.unsplash.com/photo-1596097635121-14b38c5d7354?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+    image: "/lovable-uploads/4342408a-5b87-43a1-85f2-3f25e9c16c74.png",
     date: "August 12, 2023"
   },
   {
     id: 2,
     title: "Regional Cuisines of India",
     excerpt: "From the creamy curries of Punjab to the coconut-infused dishes of Kerala, explore India's diverse regional cuisines.",
-    image: "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+    image: "/lovable-uploads/f1f2a376-8f48-4616-8eb2-e13406ec614b.png",
     date: "July 28, 2023"
   },
   {
     id: 3,
     title: "The Health Benefits of Turmeric",
     excerpt: "This golden spice has been used in Ayurvedic medicine for thousands of years. Learn about its powerful health benefits.",
-    image: "https://images.unsplash.com/photo-1615485500704-8e990f9027ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+    image: "/lovable-uploads/451a4da1-e1ee-4b8d-b427-41e32c9ccb7b.png",
     date: "June 15, 2023"
   }
 ];
