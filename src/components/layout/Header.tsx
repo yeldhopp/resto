@@ -157,13 +157,13 @@ const Header = () => {
                   <div className="flex flex-col gap-3">
                     <Button className="bg-cocinaRed text-white hover:bg-cocinaRed/90 hover:text-white w-full justify-center">
                       <UtensilsCrossed className="mr-2 h-5 w-5" />
-                      <a href="https://restaurants.cocinaindia.com" target="_blank" rel="noopener noreferrer" className="w-full">
+                      <a href="https://restaurant.cocinaindia.com" target="_blank" rel="noopener noreferrer" className="w-full">
                         Restaurants
                       </a>
                     </Button>
                     <Button className="bg-cocinaOrange text-white hover:bg-cocinaOrange/90 hover:text-white w-full justify-center">
                       <ShoppingCart className="mr-2 h-5 w-5" />
-                      <a href="https://groceries.cocinaindia.com" target="_blank" rel="noopener noreferrer" className="w-full">
+                      <a href="https://restaurant.cocinaindia.com" target="_blank" rel="noopener noreferrer" className="w-full">
                         Spices of India
                       </a>
                     </Button>
