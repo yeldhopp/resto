@@ -110,13 +110,13 @@ const HeroSection = () => {
                   <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
                     <Button size="lg" className="bg-white text-cocinaGreen hover:bg-white/90 text-lg px-8 py-6">
                       <UtensilsCrossed className="mr-2 h-5 w-5" />
-                      <a href="https://restaurants.cocinaindia.com" className="font-medium">
+                      <a href="https://restaurant.cocinaindia.com" className="font-medium">
                         Order Food
                       </a>
                     </Button>
                     <Button size="lg" className="bg-cocinaYellow text-cocinaDarkBrown hover:bg-cocinaYellow/90 text-lg px-8 py-6">
                       <ShoppingCart className="mr-2 h-5 w-5" />
-                      <a href="https://groceries.cocinaindia.com" className="font-medium">
+                      <a href="https://restaurant.cocinaindia.com" className="font-medium">
                         Shop Groceries
                       </a>
                     </Button>
