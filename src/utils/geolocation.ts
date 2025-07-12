@@ -1,4 +1,3 @@
-
 interface City {
   name: string;
   country: string;
@@ -6,18 +5,31 @@ interface City {
   lng: number;
 }
 
-// Major cities where Kerala restaurants are commonly found
+// Major Indian metro cities and international cities where Kerala restaurants are commonly found
 const majorCities: City[] = [
+  // Indian Metro Cities
+  { name: "Delhi", country: "India", lat: 28.7041, lng: 77.1025 },
   { name: "Mumbai", country: "India", lat: 19.0760, lng: 72.8777 },
   { name: "Bangalore", country: "India", lat: 12.9716, lng: 77.5946 },
-  { name: "Delhi", country: "India", lat: 28.7041, lng: 77.1025 },
   { name: "Chennai", country: "India", lat: 13.0827, lng: 80.2707 },
   { name: "Hyderabad", country: "India", lat: 17.3850, lng: 78.4867 },
   { name: "Pune", country: "India", lat: 18.5204, lng: 73.8567 },
+  { name: "Kolkata", country: "India", lat: 22.5726, lng: 88.3639 },
+  { name: "Ahmedabad", country: "India", lat: 23.0225, lng: 72.5714 },
+  { name: "Gurgaon", country: "India", lat: 28.4595, lng: 77.0266 },
+  { name: "Noida", country: "India", lat: 28.5355, lng: 77.3910 },
+  
+  // International Cities with Kerala Diaspora
   { name: "Dubai", country: "UAE", lat: 25.2048, lng: 55.2708 },
+  { name: "Abu Dhabi", country: "UAE", lat: 24.4539, lng: 54.3773 },
+  { name: "Doha", country: "Qatar", lat: 25.2854, lng: 51.5310 },
+  { name: "Kuwait City", country: "Kuwait", lat: 29.3759, lng: 47.9774 },
+  { name: "Riyadh", country: "Saudi Arabia", lat: 24.7136, lng: 46.6753 },
   { name: "London", country: "UK", lat: 51.5074, lng: -0.1278 },
   { name: "New York", country: "USA", lat: 40.7128, lng: -74.0060 },
-  { name: "Singapore", country: "Singapore", lat: 1.3521, lng: 103.8198 }
+  { name: "Toronto", country: "Canada", lat: 43.6532, lng: -79.3832 },
+  { name: "Singapore", country: "Singapore", lat: 1.3521, lng: 103.8198 },
+  { name: "Melbourne", country: "Australia", lat: -37.8136, lng: 144.9631 }
 ];
 
 // Calculate distance between two points using Haversine formula
@@ -40,8 +52,8 @@ const deg2rad = (deg: number): number => {
 
 export const getNearestCity = (): Promise<City> => {
   return new Promise((resolve, reject) => {
-    // Default to Mumbai if geolocation fails
-    const defaultCity = majorCities.find(city => city.name === "Mumbai") || majorCities[0];
+    // Default to Delhi if geolocation fails
+    const defaultCity = majorCities.find(city => city.name === "Delhi") || majorCities[0];
     
     // Check if browser supports geolocation
     if (!navigator.geolocation) {

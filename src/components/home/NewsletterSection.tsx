@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -36,7 +35,6 @@ const NewsletterSection = () => {
               required
               className="bg-white/20 border-white/20 placeholder:text-white/70 text-white"
             />
-            <Button type="submit" className="bg-white text-cocinaRed hover:bg-white/90 whitespace-nowrap">
             <Button type="submit" className="bg-white text-keralaGreen hover:bg-white/90 whitespace-nowrap">
               Subscribe
             </Button>
@@ -52,6 +50,3 @@ const NewsletterSection = () => {
 };
 
 export default NewsletterSection;
-
-  )
-}

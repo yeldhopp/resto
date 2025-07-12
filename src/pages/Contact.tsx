@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,14 +16,14 @@ const Contact = () => {
     message: ""
   });
   
-  const [nearestLocation, setNearestLocation] = useState("North Carolina");
+  const [nearestLocation, setNearestLocation] = useState("Delhi");
   const [locationLoading, setLocationLoading] = useState(true);
 
   useEffect(() => {
     const fetchLocation = async () => {
       try {
         const nearestCity = await getNearestCity();
-        setNearestLocation(`${nearestCity.name}, ${nearestCity.state}`);
+        setNearestLocation(`${nearestCity.name}, ${nearestCity.country}`);
       } catch (error) {
         console.error("Error fetching location:", error);
       } finally {
@@ -61,7 +60,6 @@ const Contact = () => {
     <Layout>
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-cocinaRed text-center">Contact Us</h1>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-keralaGreen text-center">Contact Us</h1>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             We'd love to hear from you! Whether you're a restaurant owner, spice supplier, or Kerala food enthusiast, our team is here to help.
@@ -70,9 +68,6 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             <Card className="card-hover">
               <CardContent className="flex flex-col items-center text-center p-6">
-                <div className="bg-cocinaRed/10 p-4 rounded-full mb-4">
-                  <Mail className="h-6 w-6 text-keralaGreen" />
-                </div>
                 <div className="bg-keralaGreen/10 p-4 rounded-full mb-4">
                   <Mail className="h-6 w-6 text-keralaGreen" />
                 </div>
@@ -99,8 +94,8 @@ const Contact = () => {
                   +91 98765 43210
                 </a>
                 <p className="text-muted-foreground mt-2 mb-2">Hours of Operation:</p>
-                <p>Online Support: 24/7</p>
-                <p>Office Hours: Monday-Friday, 9am-6pm IST</p>
+                <p className="text-sm">Online Support: 24/7</p>
+                <p className="text-sm">Office Hours: Monday-Friday, 9am-6pm IST</p>
               </CardContent>
             </Card>
             
@@ -111,12 +106,13 @@ const Contact = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Visit Us</h3>
                 <p className="text-muted-foreground mb-2">Head Office:</p>
-                <address className="not-italic">
+                <address className="not-italic text-sm">
                   Kerala Restaurant Pvt Ltd<br />
-                  Kochi, Kerala 682001<br />
-                  India
+                  A-1179, GD Colony, Block A<br />
+                  Mayur Vihar Phase III, Gharoli<br />
+                  Delhi, 110096, India
                 </address>
-                <p className="text-muted-foreground mt-2">
+                <p className="text-muted-foreground mt-2 text-sm">
                   By appointment only
                 </p>
               </CardContent>

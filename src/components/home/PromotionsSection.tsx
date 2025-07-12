@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -9,27 +8,27 @@ const promotions = [
   {
     id: 1,
     title: "Onam Festival Special",
-    description: "Celebrate Onam with 25% off on traditional Kerala meals and sadya orders!",
+    description: "Celebrate Onam with 25% off on traditional Kerala sadya meals and festive orders!",
     badge: "Limited Time",
     image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     link: "https://restaurants.naadanresto.com",
-    buttonText: "Order Now",
+    buttonText: "Order Sadya",
     color: "bg-keralaGreen"
   },
   {
     id: 2,
     title: "Kerala Spice Collection",
-    description: "Get authentic Kerala spices delivered monthly - cardamom, pepper, and more!",
+    description: "Get authentic Kerala spices delivered monthly - cardamom, pepper, and more from God's Own Country!",
     badge: "Bestseller",
     image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     link: "https://spices.naadanresto.com",
-    buttonText: "Subscribe",
+    buttonText: "Subscribe Now",
     color: "bg-keralaGold"
   },
   {
     id: 3,
-    title: "Free Shipping",
-    description: "Free delivery on Kerala spices and ingredients with code KERALA2024",
+    title: "Free Delivery in Delhi",
+    description: "Free delivery on Kerala spices and ingredients across Delhi NCR with code KERALA2024",
     badge: "New Customers",
     image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     link: "https://spices.naadanresto.com",
