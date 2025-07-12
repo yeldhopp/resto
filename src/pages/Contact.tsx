@@ -71,6 +71,8 @@ const Contact = () => {
             <Card className="card-hover">
               <CardContent className="flex flex-col items-center text-center p-6">
                 <div className="bg-cocinaRed/10 p-4 rounded-full mb-4">
+                  <Mail className="h-6 w-6 text-keralaGreen" />
+                </div>
                 <div className="bg-keralaGreen/10 p-4 rounded-full mb-4">
                   <Mail className="h-6 w-6 text-keralaGreen" />
                 </div>
