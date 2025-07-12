@@ -52,3 +52,6 @@ const NewsletterSection = () => {
 };
 
 export default NewsletterSection;
+
+  )
+}
