@@ -39,23 +39,23 @@ const HeroSection = () => {
   const slides = [
     {
       id: "slide1",
-      image: "/lovable-uploads/f73dbaee-92bb-4652-bb6d-6ac1e9f0f309.png",
+      image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
       title: !isLoading && nearestCity ? 
-        `Discover Authentic Indian Cuisine near ${nearestCity}` : 
-        "Discover Authentic Indian Cuisine",
-      description: "Your gateway to the vibrant flavors and rich traditions of India - from restaurant-quality meals to authentic grocery ingredients."
+        `Authentic Kerala Cuisine near ${nearestCity}` : 
+        "Authentic Kerala Cuisine Worldwide",
+      description: "Experience the rich flavors of God's Own Country - from traditional sadya to aromatic spices, connecting Kerala restaurants globally."
     },
     {
       id: "slide2",
-      image: "/lovable-uploads/76a61805-3fb6-4aa7-8b4b-fabfabe7a622.png",
-      title: "Experience the Richness of Indian Spices",
-      description: "Explore our curated selection of authentic spices that bring the true essence of Indian cooking to your kitchen."
+      image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=2371&q=80",
+      title: "Traditional Kerala Spices & Ingredients",
+      description: "From cardamom hills to coconut groves - discover authentic Kerala spices and ingredients delivered fresh to your doorstep."
     },
     {
       id: "slide3",
-      image: "/lovable-uploads/cbe59b8d-52d8-4749-99f3-15b12bb0b967.png",
-      title: "From Street Food to Gourmet Delights",
-      description: "Journey through India's diverse culinary landscape with our restaurant partners and grocery selections."
+      image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      title: "Kerala Restaurants Across the Globe",
+      description: "Connecting Kerala food lovers worldwide with authentic restaurants serving traditional recipes from God's Own Country."
     }
   ];
 
@@ -96,7 +96,7 @@ const HeroSection = () => {
               />
               
               {/* Changed overlay from red to green-yellow gradient */}
-              <div className="absolute inset-0 bg-gradient-to-r from-cocinaGreen/60 to-cocinaYellow/60 z-10" />
+              <div className="absolute inset-0 bg-gradient-to-r from-keralaGreen/60 to-keralaGold/60 z-10" />
               
               <div className="container mx-auto relative z-20 h-full flex items-center px-4">
                 <div className="max-w-3xl text-white">
@@ -108,16 +108,16 @@ const HeroSection = () => {
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
-                    <Button size="lg" className="bg-white text-cocinaGreen hover:bg-white/90 text-lg px-8 py-6">
+                    <Button size="lg" className="bg-white text-keralaGreen hover:bg-white/90 text-lg px-8 py-6">
                       <UtensilsCrossed className="mr-2 h-5 w-5" />
-                      <a href="https://restaurant.cocinaindia.com" className="font-medium">
-                        Order Food
+                      <a href="https://restaurants.naadanresto.com" className="font-medium">
+                        Find Restaurants
                       </a>
                     </Button>
-                    <Button size="lg" className="bg-cocinaYellow text-cocinaDarkBrown hover:bg-cocinaYellow/90 text-lg px-8 py-6">
+                    <Button size="lg" className="bg-keralaGold text-keralaBrown hover:bg-keralaGold/90 text-lg px-8 py-6">
                       <ShoppingCart className="mr-2 h-5 w-5" />
-                      <a href="https://restaurant.cocinaindia.com" className="font-medium">
-                        Shop Groceries
+                      <a href="https://spices.naadanresto.com" className="font-medium">
+                        Buy Spices
                       </a>
                     </Button>
                   </div>

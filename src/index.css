@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 36 33% 97%;
-    --foreground: 25 29% 19%;
+    --background: 120 20% 98%;
+    --foreground: 120 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 25 29% 19%;
+    --card-foreground: 120 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 25 29% 19%;
+    --popover-foreground: 120 15% 15%;
 
-    --primary: 0 75% 50%;
+    --primary: 120 60% 25%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 87% 58%;
+    --secondary: 45 85% 55%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 30 10% 92%;
-    --muted-foreground: 25 5% 45%;
+    --muted: 120 10% 94%;
+    --muted-foreground: 120 5% 45%;
 
-    --accent: 43 100% 72%;
-    --accent-foreground: 25 29% 19%;
+    --accent: 35 100% 65%;
+    --accent-foreground: 120 15% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 30 10% 85%;
-    --input: 30 10% 85%;
-    --ring: 30 87% 58%;
+    --border: 120 10% 87%;
+    --input: 120 10% 87%;
+    --ring: 120 60% 25%;
 
     --radius: 0.5rem;
 
@@ -64,7 +64,7 @@
 
 .spice-pattern-overlay {
   background-color: rgba(255, 255, 255, 0.9);
-  background-image: url('/spice-pattern.png');
+  background-image: url('/kerala-pattern.png');
   background-blend-mode: overlay;
   background-size: 300px;
 }

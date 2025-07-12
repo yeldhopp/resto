@@ -8,33 +8,33 @@ import { getNearestCity } from "@/utils/geolocation";
 const promotions = [
   {
     id: 1,
-    title: "Weekend Special",
-    description: "Get 20% off on all restaurant orders above $30 this weekend!",
+    title: "Onam Festival Special",
+    description: "Celebrate Onam with 25% off on traditional Kerala meals and sadya orders!",
     badge: "Limited Time",
-    image: "/lovable-uploads/d2c2529c-a7fe-4e6d-8688-b1ac839334e9.png",
-    link: "https://restaurants.cocinaindia.com",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    link: "https://restaurants.naadanresto.com",
     buttonText: "Order Now",
-    color: "bg-cocinaRed"
+    color: "bg-keralaGreen"
   },
   {
     id: 2,
-    title: "Spice Box",
-    description: "Subscribe to our monthly spice box and discover authentic Indian flavors!",
+    title: "Kerala Spice Collection",
+    description: "Get authentic Kerala spices delivered monthly - cardamom, pepper, and more!",
     badge: "Bestseller",
-    image: "/lovable-uploads/4984a8eb-9e67-4d97-8215-82f818e036a6.png",
-    link: "https://groceries.cocinaindia.com",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    link: "https://spices.naadanresto.com",
     buttonText: "Subscribe",
-    color: "bg-cocinaOrange"
+    color: "bg-keralaGold"
   },
   {
     id: 3,
-    title: "Free Delivery",
-    description: "Free grocery delivery on your first order with code WELCOME",
+    title: "Free Shipping",
+    description: "Free delivery on Kerala spices and ingredients with code KERALA2024",
     badge: "New Customers",
-    image: "/lovable-uploads/76a61805-3fb6-4aa7-8b4b-fabfabe7a622.png",
-    link: "https://groceries.cocinaindia.com",
+    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    link: "https://spices.naadanresto.com",
     buttonText: "Shop Now",
-    color: "bg-cocinaGreen"
+    color: "bg-keralaSpice"
   }
 ];
 
@@ -66,7 +66,7 @@ const PromotionsSection = () => {
             "Special Offers"}
         </h2>
         <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
-          Take advantage of our latest promotions and discover new flavors from across India
+          Discover authentic Kerala flavors with our exclusive offers and seasonal promotions
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

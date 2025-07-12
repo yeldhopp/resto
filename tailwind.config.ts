@@ -63,13 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Cocina India
-				cocinaRed: '#D92626',
-				cocinaOrange: '#EF8A37',
-				cocinaYellow: '#FFD56D',
-				cocinaDarkBrown: '#42362B',
-				cocinaGreen: '#568203',
-				cocinaLightBrown: '#D9B99B'
+				// Custom colors for Kerala Restaurant
+				keralaGreen: '#2D5016',
+				keralaGold: '#DAA520',
+				keralaCoconut: '#F5F5DC',
+				keralaBrown: '#8B4513',
+				keralaSpice: '#CD853F',
+				keralaRed: '#B22222'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -77,8 +77,8 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			backgroundImage: {
-				'spice-pattern': "url('/spice-pattern.png')",
-				'hero-gradient': 'linear-gradient(90deg, rgba(217, 38, 38, 0.85) 0%, rgba(239, 138, 55, 0.85) 100%)',
+				'kerala-pattern': "url('/kerala-pattern.png')",
+				'hero-gradient': 'linear-gradient(90deg, rgba(45, 80, 22, 0.85) 0%, rgba(218, 165, 32, 0.85) 100%)',
 			},
 			keyframes: {
 				'accordion-down': {

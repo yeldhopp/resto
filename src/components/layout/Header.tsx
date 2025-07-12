@@ -25,21 +25,21 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo (Left) */}
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-bold text-cocinaRed font-spice">Cocina <span className="text-cocinaGreen">India</span></span>
+          <span className="text-2xl font-bold text-keralaGreen font-spice">Kerala <span className="text-keralaGold">Restaurant</span></span>
         </Link>
         
         {/* Buttons (Center) - visible on desktop */}
         <div className="hidden md:flex gap-4 mx-auto">
-          <Button variant="outline" className="bg-cocinaRed text-white hover:bg-cocinaRed/90 hover:text-white">
+          <Button variant="outline" className="bg-keralaGreen text-white hover:bg-keralaGreen/90 hover:text-white">
             <UtensilsCrossed className="mr-2 h-4 w-4" />
-            <a href="https://restaurant.cocinaindia.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://restaurants.naadanresto.com" target="_blank" rel="noopener noreferrer">
               Restaurants
             </a>
           </Button>
-          <Button variant="outline" className="bg-cocinaOrange text-white hover:bg-cocinaOrange/90 hover:text-white">
+          <Button variant="outline" className="bg-keralaGold text-white hover:bg-keralaGold/90 hover:text-white">
             <ShoppingCart className="mr-2 h-4 w-4" />
-            <a href="https://restaurant.cocinaindia.com" target="_blank" rel="noopener noreferrer">
-              Spices of India
+            <a href="https://spices.naadanresto.com" target="_blank" rel="noopener noreferrer">
+              Kerala Spices
             </a>
           </Button>
         </div>
@@ -70,7 +70,7 @@ const Header = () => {
                         >
                           <div className="text-sm font-medium leading-none">About Us</div>
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                            Learn more about Cocina India and our mission
+                            Learn more about Kerala Restaurant and our mission
                           </p>
                         </Link>
                       </NavigationMenuLink>
@@ -78,12 +78,12 @@ const Header = () => {
                     <li>
                       <NavigationMenuLink asChild>
                         <Link
-                          to="/why-cocina"
+                          to="/why-kerala"
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                         >
-                          <div className="text-sm font-medium leading-none">Why Cocina India?</div>
+                          <div className="text-sm font-medium leading-none">Why Kerala Restaurant?</div>
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                            Discover what makes us different from other services
+                            Discover what makes us the best for Kerala cuisine
                           </p>
                         </Link>
                       </NavigationMenuLink>
@@ -91,12 +91,12 @@ const Header = () => {
                     <li>
                       <NavigationMenuLink asChild>
                         <Link
-                          to="/culinary-culture"
+                          to="/kerala-culture"
                           className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                         >
-                          <div className="text-sm font-medium leading-none">Indian Culinary Culture</div>
+                          <div className="text-sm font-medium leading-none">Kerala Culinary Heritage</div>
                           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                            Explore the rich heritage of Indian cuisine
+                            Explore the rich heritage of Kerala cuisine
                           </p>
                         </Link>
                       </NavigationMenuLink>
@@ -141,11 +141,11 @@ const Header = () => {
                     <Link to="/" className="py-2 text-lg font-medium">Home</Link>
                     
                     <div>
-                      <p className="py-2 text-lg font-medium">About</p>
+                      <p className="py-2 text-lg font-medium">Discover</p>
                       <div className="pl-4 flex flex-col space-y-2 mt-2">
                         <Link to="/about" className="py-1 text-base">About Us</Link>
-                        <Link to="/why-cocina" className="py-1 text-base">Why Cocina India?</Link>
-                        <Link to="/culinary-culture" className="py-1 text-base">Indian Culinary Culture</Link>
+                        <Link to="/why-kerala" className="py-1 text-base">Why Kerala Restaurant?</Link>
+                        <Link to="/kerala-culture" className="py-1 text-base">Kerala Culinary Heritage</Link>
                       </div>
                     </div>
                     
@@ -155,16 +155,16 @@ const Header = () => {
                 
                 <div className="px-6 pt-4 border-t">
                   <div className="flex flex-col gap-3">
-                    <Button className="bg-cocinaRed text-white hover:bg-cocinaRed/90 hover:text-white w-full justify-center">
+                    <Button className="bg-keralaGreen text-white hover:bg-keralaGreen/90 hover:text-white w-full justify-center">
                       <UtensilsCrossed className="mr-2 h-5 w-5" />
-                      <a href="https://restaurant.cocinaindia.com" target="_blank" rel="noopener noreferrer" className="w-full">
+                      <a href="https://restaurants.naadanresto.com" target="_blank" rel="noopener noreferrer" className="w-full">
                         Restaurants
                       </a>
                     </Button>
-                    <Button className="bg-cocinaOrange text-white hover:bg-cocinaOrange/90 hover:text-white w-full justify-center">
+                    <Button className="bg-keralaGold text-white hover:bg-keralaGold/90 hover:text-white w-full justify-center">
                       <ShoppingCart className="mr-2 h-5 w-5" />
-                      <a href="https://restaurant.cocinaindia.com" target="_blank" rel="noopener noreferrer" className="w-full">
-                        Spices of India
+                      <a href="https://spices.naadanresto.com" target="_blank" rel="noopener noreferrer" className="w-full">
+                        Kerala Spices
                       </a>
                     </Button>
                   </div>

@@ -24,9 +24,9 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-1">
-            <h3 className="text-xl font-bold mb-4">Cocina India</h3>
+            <h3 className="text-xl font-bold mb-4">Kerala Restaurant</h3>
             <p className="text-gray-300 mb-4">
-              North Carolina's premier gateway to authentic Indian cuisine and groceries.
+              Connecting Kerala restaurants worldwide to bring authentic Kerala cuisine to your doorstep.
             </p>
             <div className="flex space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -46,8 +46,8 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/why-cocina" className="text-gray-300 hover:text-white transition-colors">Why Cocina India?</Link></li>
-              <li><Link to="/culinary-culture" className="text-gray-300 hover:text-white transition-colors">Indian Culinary Culture</Link></li>
+              <li><Link to="/why-kerala" className="text-gray-300 hover:text-white transition-colors">Why Kerala Restaurant?</Link></li>
+              <li><Link to="/kerala-culture" className="text-gray-300 hover:text-white transition-colors">Kerala Culinary Heritage</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact Us</Link></li>
             </ul>
           </div>
@@ -55,9 +55,9 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="text-xl font-bold mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li><a href="https://restaurants.cocinaindia.com" className="text-gray-300 hover:text-white transition-colors">Food Ordering</a></li>
-              <li><a href="https://groceries.cocinaindia.com" className="text-gray-300 hover:text-white transition-colors">Grocery Delivery</a></li>
-              <li><Link to="/culinary-culture" className="text-gray-300 hover:text-white transition-colors">Culinary Resources</Link></li>
+              <li><a href="https://restaurants.naadanresto.com" className="text-gray-300 hover:text-white transition-colors">Restaurant Network</a></li>
+              <li><a href="https://spices.naadanresto.com" className="text-gray-300 hover:text-white transition-colors">Kerala Spices & Ingredients</a></li>
+              <li><Link to="/kerala-culture" className="text-gray-300 hover:text-white transition-colors">Culinary Heritage</Link></li>
             </ul>
           </div>
           
@@ -73,6 +73,7 @@ const Footer = () => {
                 className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
               />
               <Button type="submit" className="w-full bg-cocinaOrange hover:bg-cocinaOrange/90">
+              <Button type="submit" className="w-full bg-keralaGold hover:bg-keralaGold/90">
                 Subscribe
               </Button>
             </form>
@@ -80,7 +81,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 pt-6 text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} Cocina India. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Kerala Restaurant. All rights reserved.</p>
           <div className="mt-2 space-x-4">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

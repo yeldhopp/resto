@@ -1,6 +1,6 @@
 
 // Cache name
-const CACHE_NAME = 'cocina-india-v1';
+const CACHE_NAME = 'kerala-restaurant-v1';
 
 // Files to cache
 const urlsToCache = [

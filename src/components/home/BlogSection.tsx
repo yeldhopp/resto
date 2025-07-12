@@ -6,24 +6,24 @@ import { ArrowRight } from "lucide-react";
 const blogPosts = [
   {
     id: 1,
-    title: "The Art of Indian Spices",
-    excerpt: "Discover the essential spices that form the foundation of Indian cuisine and how to use them in your cooking.",
-    image: "/lovable-uploads/4342408a-5b87-43a1-85f2-3f25e9c16c74.png",
-    date: "August 12, 2023"
+    title: "The Magic of Kerala Spices",
+    excerpt: "Explore the aromatic world of Kerala spices - from cardamom hills to black pepper vines, discover what makes Kerala the spice capital.",
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    date: "November 15, 2024"
   },
   {
     id: 2,
-    title: "Regional Cuisines of India",
-    excerpt: "From the creamy curries of Punjab to the coconut-infused dishes of Kerala, explore India's diverse regional cuisines.",
-    image: "/lovable-uploads/f1f2a376-8f48-4616-8eb2-e13406ec614b.png",
-    date: "July 28, 2023"
+    title: "Traditional Kerala Sadya",
+    excerpt: "Learn about the elaborate vegetarian feast served on banana leaves - a culinary tradition that represents Kerala's rich heritage.",
+    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    date: "October 28, 2024"
   },
   {
     id: 3,
-    title: "The Health Benefits of Turmeric",
-    excerpt: "This golden spice has been used in Ayurvedic medicine for thousands of years. Learn about its powerful health benefits.",
-    image: "/lovable-uploads/451a4da1-e1ee-4b8d-b427-41e32c9ccb7b.png",
-    date: "June 15, 2023"
+    title: "Kerala's Coconut Culture",
+    excerpt: "From coconut oil to coconut milk, discover how this versatile ingredient shapes Kerala cuisine and daily life.",
+    image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    date: "September 20, 2024"
   }
 ];
 
@@ -50,7 +50,7 @@ const BlogSection = () => {
                 <p className="text-sm text-muted-foreground mb-2">{post.date}</p>
                 <h3 className="text-xl font-bold mb-2">{post.title}</h3>
                 <p className="text-muted-foreground mb-4 line-clamp-3">{post.excerpt}</p>
-                <Button variant="link" className="p-0 text-cocinaRed hover:text-cocinaRed/80 font-medium">
+                <Button variant="link" className="p-0 text-keralaGreen hover:text-keralaGreen/80 font-medium">
                   Read More <ArrowRight className="ml-1 h-4 w-4" />
                 </Button>
               </CardContent>
@@ -59,7 +59,7 @@ const BlogSection = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <Button className="bg-cocinaOrange hover:bg-cocinaOrange/90 text-white">
+          <Button className="bg-keralaGold hover:bg-keralaGold/90 text-white">
             Explore All Articles
           </Button>
         </div>

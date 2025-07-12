@@ -8,60 +8,60 @@ import { Star } from "lucide-react";
 const restaurants = [
   {
     id: 1,
-    name: "Spice Garden",
-    cuisine: "North Indian",
+    name: "Malabar Kitchen",
+    cuisine: "Traditional Kerala",
     rating: 4.8,
-    image: "/lovable-uploads/69dc4110-e9ff-4f46-bf00-f44a8da9dd3a.png",
-    location: "Chapel Hill",
-    popular: "Butter Chicken"
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    location: "Mumbai",
+    popular: "Fish Curry"
   },
   {
     id: 2,
-    name: "South Thali",
-    cuisine: "South Indian",
+    name: "Coconut Grove",
+    cuisine: "Kerala Vegetarian",
     rating: 4.7,
-    image: "/lovable-uploads/4162f18d-6ea2-4687-abf2-4a99f248d0f4.png",
-    location: "Raleigh",
-    popular: "Masala Dosa"
+    image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    location: "Bangalore",
+    popular: "Sadya Meals"
   },
   {
     id: 3,
-    name: "Bombay Street Food",
-    cuisine: "Street Food",
+    name: "Backwater Delights",
+    cuisine: "Seafood Specialist",
     rating: 4.6,
-    image: "/lovable-uploads/cbe59b8d-52d8-4749-99f3-15b12bb0b967.png",
-    location: "Durham",
-    popular: "Pav Bhaji"
+    image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    location: "Dubai",
+    popular: "Karimeen Fry"
   }
 ];
 
 const groceries = [
   {
     id: 1,
-    name: "Organic Basmati Rice",
-    category: "Grains",
+    name: "Kerala Red Rice",
+    category: "Traditional Grains",
     rating: 4.9,
-    image: "/lovable-uploads/8292a8fd-3ad6-4823-be1e-21f89392a3b8.png",
-    weight: "10 lb",
-    price: "$18.99"
+    image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    weight: "5 kg",
+    price: "₹450"
   },
   {
     id: 2,
-    name: "Masala Spice Set",
-    category: "Spices",
+    name: "Kerala Spice Box",
+    category: "Authentic Spices",
     rating: 4.8,
-    image: "/lovable-uploads/52a20f0a-5d94-40b7-91ea-5ab85d76a8df.png",
-    weight: "12 oz",
-    price: "$29.99"
+    image: "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    weight: "500g",
+    price: "₹850"
   },
   {
     id: 3,
-    name: "Homemade Ghee",
-    category: "Dairy",
+    name: "Fresh Coconut Oil",
+    category: "Traditional Oils",
     rating: 4.7,
-    image: "/lovable-uploads/a75ff3a4-0237-4398-a5bc-8df6713e0c1a.png",
-    weight: "16 oz",
-    price: "$12.99"
+    image: "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    weight: "1 liter",
+    price: "₹320"
   }
 ];
 
@@ -77,7 +77,7 @@ const FeaturedSection = () => {
         <Tabs defaultValue="restaurants" className="w-full max-w-5xl mx-auto">
           <TabsList className="grid w-full grid-cols-2 mb-8">
             <TabsTrigger value="restaurants">Restaurants</TabsTrigger>
-            <TabsTrigger value="groceries">Groceries</TabsTrigger>
+            <TabsTrigger value="groceries">Spices & Ingredients</TabsTrigger>
           </TabsList>
           
           <TabsContent value="restaurants" className="mt-0">
@@ -98,14 +98,14 @@ const FeaturedSection = () => {
                   <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="text-xl font-bold">{restaurant.name}</h3>
-                      <Badge className="bg-cocinaOrange text-white">{restaurant.cuisine}</Badge>
+                      <Badge className="bg-keralaGold text-white">{restaurant.cuisine}</Badge>
                     </div>
                     <p className="text-muted-foreground mb-1">{restaurant.location}</p>
                     <p className="mb-4">
                       <span className="font-medium">Popular:</span> {restaurant.popular}
                     </p>
-                    <Button className="w-full bg-cocinaRed hover:bg-cocinaRed/90">
-                      <a href="https://restaurants.cocinaindia.com" className="w-full">
+                    <Button className="w-full bg-keralaGreen hover:bg-keralaGreen/90">
+                      <a href="https://restaurants.naadanresto.com" className="w-full">
                         Order Now
                       </a>
                     </Button>
@@ -133,12 +133,12 @@ const FeaturedSection = () => {
                   <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="text-xl font-bold">{grocery.name}</h3>
-                      <Badge className="bg-cocinaGreen text-white">{grocery.category}</Badge>
+                      <Badge className="bg-keralaSpice text-white">{grocery.category}</Badge>
                     </div>
                     <p className="text-muted-foreground mb-1">{grocery.weight}</p>
                     <p className="mb-4 font-bold text-lg">{grocery.price}</p>
-                    <Button className="w-full bg-cocinaOrange hover:bg-cocinaOrange/90">
-                      <a href="https://groceries.cocinaindia.com" className="w-full">
+                    <Button className="w-full bg-keralaGold hover:bg-keralaGold/90">
+                      <a href="https://spices.naadanresto.com" className="w-full">
                         Add to Cart
                       </a>
                     </Button>

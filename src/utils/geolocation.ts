@@ -1,23 +1,23 @@
 
 interface City {
   name: string;
-  state: string;
+  country: string;
   lat: number;
   lng: number;
 }
 
-// Simple list of major NC cities with coordinates
-const northCarolinaCities: City[] = [
-  { name: "Reidsville", state: "NC", lat: 36.3548, lng: -79.6698 },
-  { name: "Greensboro", state: "NC", lat: 36.0726, lng: -79.7920 },
-  { name: "Charlotte", state: "NC", lat: 35.2271, lng: -80.8431 },
-  { name: "Raleigh", state: "NC", lat: 35.7796, lng: -78.6382 },
-  { name: "Wilmington", state: "NC", lat: 34.2104, lng: -77.8868 },
-  { name: "Asheville", state: "NC", lat: 35.5951, lng: -82.5515 },
-  { name: "Durham", state: "NC", lat: 35.9940, lng: -78.8986 },
-  { name: "Winston-Salem", state: "NC", lat: 36.0999, lng: -80.2442 },
-  { name: "Fayetteville", state: "NC", lat: 35.0527, lng: -78.8784 },
-  { name: "Cary", state: "NC", lat: 35.7915, lng: -78.7811 }
+// Major cities where Kerala restaurants are commonly found
+const majorCities: City[] = [
+  { name: "Mumbai", country: "India", lat: 19.0760, lng: 72.8777 },
+  { name: "Bangalore", country: "India", lat: 12.9716, lng: 77.5946 },
+  { name: "Delhi", country: "India", lat: 28.7041, lng: 77.1025 },
+  { name: "Chennai", country: "India", lat: 13.0827, lng: 80.2707 },
+  { name: "Hyderabad", country: "India", lat: 17.3850, lng: 78.4867 },
+  { name: "Pune", country: "India", lat: 18.5204, lng: 73.8567 },
+  { name: "Dubai", country: "UAE", lat: 25.2048, lng: 55.2708 },
+  { name: "London", country: "UK", lat: 51.5074, lng: -0.1278 },
+  { name: "New York", country: "USA", lat: 40.7128, lng: -74.0060 },
+  { name: "Singapore", country: "Singapore", lat: 1.3521, lng: 103.8198 }
 ];
 
 // Calculate distance between two points using Haversine formula
@@ -40,8 +40,8 @@ const deg2rad = (deg: number): number => {
 
 export const getNearestCity = (): Promise<City> => {
   return new Promise((resolve, reject) => {
-    // Default to Reidsville (corporate HQ) if geolocation fails
-    const defaultCity = northCarolinaCities.find(city => city.name === "Reidsville") || northCarolinaCities[0];
+    // Default to Mumbai if geolocation fails
+    const defaultCity = majorCities.find(city => city.name === "Mumbai") || majorCities[0];
     
     // Check if browser supports geolocation
     if (!navigator.geolocation) {
@@ -58,7 +58,7 @@ export const getNearestCity = (): Promise<City> => {
         let nearestCity = defaultCity;
         let minDistance = Number.MAX_VALUE;
         
-        northCarolinaCities.forEach(city => {
+        majorCities.forEach(city => {
           const distance = calculateDistance(latitude, longitude, city.lat, city.lng);
           if (distance < minDistance) {
             minDistance = distance;

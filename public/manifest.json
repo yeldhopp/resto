@@ -1,12 +1,12 @@
 
 {
-  "name": "Cocina India",
-  "short_name": "Cocina",
-  "description": "Authentic Indian Food & Groceries in North Carolina",
+  "name": "Kerala Restaurant",
+  "short_name": "Kerala",
+  "description": "Authentic Kerala Cuisine & Spices Worldwide",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#CD4631",
+  "theme_color": "#2D5016",
   "icons": [
     {
       "src": "/icons/icon-72x72.png",
